@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* nav bar*/
+nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    z-index: 999;
+    position: sticky;
+}
+/*inner-nav bar*/
+.nav-bar .inner-nav{
+    border-radius:4rem ;
+    width: 80vw;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+/*logo*/
+.nav-bar .inner-nav .logo {
+    margin-left: 0.8rem;
+    text-align: center;
+    overflow-wrap: break-word;
+    inline-size: 160px;
+}
+.inner-nav .logo strong {
+    text-transform: uppercase;   
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:rgb(4, 53, 53); 
+}
+.nav-bar .inner-nav .listing{
+    display:flex;
+    padding: 1rem 3rem;
+    justify-content:center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+li > a{
+    color:rgb(4, 53, 53);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+li > a:hover{
+    color: aqua;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+.inner-nav .user{
+    background-color: rgba(146, 250, 252, 0.4);
+    padding: 1.2rem 1rem;
+    border-radius: 0.8rem;
+}
+.inner-nav .user a{
+        text-transform: capitalize;
+        color:rgb(10, 176, 241);
+        font-size: 1rem;
+        font-weight: 700;
+}
+/*hero-section*/
+.hero-section{
+    height:40vw;
+    position:relative;
+}
+.container{
+    margin: 0 8rem;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.box .left-part , .right-part{
+    flex-basis: 50%;
+    margin-top: 3rem;
+}
+
+.box .heading{
+    max-width: 50%;
+    font-size: 2rem;
+    color:rgb(4, 53, 53);
+    line-height: 1.5;
+    text-transform:capitalize;
+}
+.box .heading span{
+    color: aqua;
+}
+.hero-section .box .paragraph{
+    display: flex;
+    flex-direction:column;
+}
+.hero-section .box .paragraph p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 60%;
+    line-height: 1;
+}
+.left-part .booknow{
+    background-color:rgb(10, 176, 241);
+    padding: 1.2rem 1rem;
+    border-radius: 0.8rem;
+    margin-top: 1rem;
+    max-width:35% ;
+}
+.left-part .booknow a{
+    color:rgb(238, 249, 253);
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+
+.box .right-part .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .right-part .image img{
+    max-width:60%;
+    object-fit:contain;
+    border-radius:2rem;
+}
